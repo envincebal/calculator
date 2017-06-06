@@ -63,8 +63,8 @@ button:active {
 
 .equals-button {
 	position: relative;
-	bottom: 69px;
-	height: 123px;
+	bottom: 71px;
+	height: 126px;
 	background-color: #478dff;
 	-webkit-box-shadow: 0 5px #125CD5;
 	        box-shadow: 0 5px #125CD5;
@@ -72,7 +72,7 @@ button:active {
 
 .input-buttons {
 	width: 80%;
-	margin: 20px auto;
+	margin: 15px auto;
 }
 
 .title {
@@ -80,21 +80,16 @@ button:active {
 	margin: 10px 0;
 }
 
-.display-field {
-	width: 80%;
-	background-color: #D4D4AA;
-	-webkit-box-shadow: inset 0px 0px 16px 0px #8c8c42;
-	        box-shadow: inset 0px 0px 16px 0px #8c8c42;
-	margin: 0 auto;
-	text-align: right;
+.result {
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 	border: 1px solid #82817F;
-}
-
-.result {
-	height: 40px;
-	font-size: 30px;
-	margin:7px 0 5px 0;
+	width: 270px;
+	background-color: #D4D4AA;
+	-webkit-box-shadow: inset 0px 0px 16px 0px #8c8c42;
+	        box-shadow: inset 0px 0px 16px 0px #8c8c42;
+	height: 60px;
+	text-align: right;
+	font-size: 35px;
 	padding: 0 5px 0 0;
 }
