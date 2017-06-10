@@ -27,10 +27,11 @@ for (var i = 0; i < number.length; i++) {
 
 for (var i = 0; i < operator.length; i++) {
 	operator[i].addEventListener("click", function(){
-		if (display.value.substring(display.value.length - 1) === this.value || state === 1) {
+		if (display.value.substring(display.value.length - 1) === this.value) {
 			this.value += "";
-		} else if (display.value === "" || display.value.slice(this.value)){
+		} else if (display.value === "" || display.value.slice(this.value) || state === 1){
 			display.value += this.value;
+			state = 0;
 		}
 	})
 }
