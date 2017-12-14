@@ -8,11 +8,11 @@ html {
 	height: 525px;
 	padding: 15px 0 0 0;
 	-webkit-border-radius: 10px;
-	        border-radius: 10px;
+	border-radius: 10px;
 	text-align: center;
 	background-color: #E3A62D;
 	-webkit-box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
-	        box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
+	box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
 }
 
 body,
@@ -23,7 +23,7 @@ button {
 button {
 	width: 62px;
 	-webkit-border-radius: 7px;
-	        border-radius: 7px;
+	border-radius: 7px;
 	border-style: none;
 	font-size: 30px;
 	margin: 10px 0 5px 0;
@@ -33,22 +33,22 @@ button {
 	color: #fff;
 	outline: none;
 	-webkit-box-shadow: 0 5px #5E5353;
-	        box-shadow: 0 5px #5E5353;
+	box-shadow: 0 5px #5E5353;
 	vertical-align: top;
 }
 
 button:active {
 	-webkit-transform: translateY(4px);
-	    -ms-transform: translateY(4px);
-	        transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	transform: translateY(4px);
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 }
 
 .clear-button {
 	background-color: #D24848;
 	-webkit-box-shadow: 0 5px #A82424;
-	        box-shadow: 0 5px #A82424;
+	box-shadow: 0 5px #A82424;
 }
 
 .third-row {
@@ -67,7 +67,7 @@ button:active {
 	height: 123px;
 	background-color: #478dff;
 	-webkit-box-shadow: 0 5px #125CD5;
-	        box-shadow: 0 5px #125CD5;
+	box-shadow: 0 5px #125CD5;
 }
 
 .input-buttons {
@@ -82,12 +82,12 @@ button:active {
 
 .result {
 	-webkit-border-radius: 5px;
-	        border-radius: 5px;
+	border-radius: 5px;
 	border: 1px solid #82817F;
 	width: 270px;
 	background-color: #D4D4AA;
 	-webkit-box-shadow: inset 0px 0px 16px 0px #8c8c42;
-	        box-shadow: inset 0px 0px 16px 0px #8c8c42;
+	box-shadow: inset 0px 0px 16px 0px #8c8c42;
 	height: 60px;
 	text-align: right;
 	font-size: 30px;
