@@ -2,19 +2,6 @@ html {
 	background-color: #BABABA;
 }
 
-.container {
-	margin: 75px auto;
-	width: 350px;
-	height: 525px;
-	padding: 15px 0 0 0;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	text-align: center;
-	background-color: #E3A62D;
-	-webkit-box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
-	box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
-}
-
 body,
 button {
 	font-family: 'Oxygen Mono', monospace;
@@ -43,6 +30,23 @@ button:active {
 	transform: translateY(4px);
 	-webkit-box-shadow: none;
 	box-shadow: none;
+}
+
+input{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+	margin: 75px auto;
+	width: 350px;
+	height: 525px;
+	padding: 15px 0 0 0;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #E3A62D;
+	-webkit-box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
+	box-shadow: 10px 10px 19px 4px #42403a, inset 0px -2px 16px 6px #b38227;
 }
 
 .clear-button {

@@ -14,6 +14,7 @@
 	function reset() {
 		display.value = "";
 		decimalState = true;
+		zeroState = false;
 	}
 
 	// Iterates through number elements and sets event listeners
@@ -73,18 +74,17 @@
 		}
 	});
 
-	zero.addEventListener("click", function(){
-		if(!zeroState){
+	zero.addEventListener("click", function () {
+		if (!zeroState) {
 			display.value += "";
-		}else{
+		} else {
 			display.value += this.value;
 		}
 	})
 
-	// Evaluates expression on display
+	// Evaluates expression on display and rounds to the nearest hundredths if a decimal
 	equals.addEventListener("click", function () {
-		display.value = eval(display.value);
-		newNumber = true;
+		display.value = parseFloat(eval(display.value).toFixed(2));
 		decimalState = true;
 	});
 })()
