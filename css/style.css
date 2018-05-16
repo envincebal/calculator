@@ -61,6 +61,12 @@ button:active {
 	width: 132px;
 }
 
+.operator-button {
+	background-color: #32ac22;
+	-webkit-box-shadow: 0 5px #1d8510;
+	box-shadow: 0 5px #1d8510;
+}
+
 .equals-button {
 	position: relative;
 	bottom: 69px;
