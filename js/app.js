@@ -44,8 +44,7 @@
 
   // Iterates through number elements and sets event listeners
   for (var i = 0; i < number.length; i++) {
-    number[i]
-      .addEventListener("click", function () {
+    number[i].addEventListener("click", function () {
         const prevDigit = display
           .textContent
           .slice(-1);
@@ -66,8 +65,7 @@
 
   // Iterates through operator elements and sets event listeners
   for (var i = 0; i < operator.length; i++) {
-    operator[i]
-      .addEventListener("click", function () {
+    operator[i].addEventListener("click", function () {
         const prevIndex = display
           .textContent
           .slice(-1);
@@ -92,8 +90,7 @@
   }
 
   // clears display value
-  clear
-    .addEventListener("click", function () {
+  clear.addEventListener("click", function () {
       init();
     });
 
