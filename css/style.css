@@ -57,7 +57,8 @@ button:active {
 	margin-left: 2px;
 }
 
-.zero-button {
+.zero-button,
+.clear-button {
 	width: 132px;
 }
 
@@ -98,7 +99,6 @@ button:active {
 	height: 60px;
 	text-align: right;
 	margin: 0 auto;
-	
 	padding: 0 5px 0 0;
 }
 
