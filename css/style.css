@@ -32,10 +32,6 @@ button:active {
 	box-shadow: none;
 }
 
-input{
-	font-family: 'Orbitron', sans-serif;
-}
-
 .container {
 	margin: 75px auto;
 	width: 350px;
@@ -90,7 +86,8 @@ input{
 	margin: 10px 0;
 }
 
-.result {
+.result-container {
+	font-family: 'Orbitron', sans-serif;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	border: 1px solid #82817F;
@@ -100,6 +97,17 @@ input{
 	box-shadow: inset 0px 0px 16px 0px #8c8c42;
 	height: 60px;
 	text-align: right;
-	font-size: 30px;
+	margin: 0 auto;
+	
 	padding: 0 5px 0 0;
+}
+
+.result{
+	font-size: 30px;
+	margin: 5px 0 0 0;
+}
+
+.history {
+	font-size: 10px;
+	margin: 5px 0 0 0;
 }
