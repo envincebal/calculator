@@ -10,6 +10,7 @@
   let newNumber = false;
   let decimalState = true;
   let zeroState = false;
+  let evaluation = false;
 
   init();
 
@@ -19,6 +20,7 @@
     newNumber = false;
     decimalState = true;
     zeroState = false;
+    evaluation = false;
   }
 
   function digitLimit() {
@@ -46,7 +48,7 @@
   for (var i = 0; i < number.length; i++) {
     number[i].addEventListener("click", function () {
       const prevDigit = display.textContent.slice(-1);
-      if (display.textContent.length === 1 && display.textContent === "0") {
+      if (newNumber || evaluation || display.textContent === "0") {
         display.textContent = this.value;
         history.textContent = this.value;
       } else if (isNaN(prevDigit) && prevDigit !== ".") {
@@ -57,6 +59,7 @@
         history.textContent += this.value;
       }
       zeroState = true;
+      evaluation = false;
       digitLimit();
     });
   }
@@ -77,6 +80,7 @@
       }
       decimalState = true;
       zeroState = false;
+      evaluation = false;
       digitLimit();
     });
   }
@@ -122,6 +126,7 @@
   // if a decimal
   equals.addEventListener("click", function () {
     const lastIndex = display.textContent.slice(-1);
+
     // If last digit is not a number then "Bad Syntax!" will display otherwise it
     // will evaluate history.textContent
     if (isNaN(lastIndex)) {
@@ -133,5 +138,6 @@
 
       decimalState = true;
     }
+    evaluation = true;
   });
 })()
