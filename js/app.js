@@ -7,7 +7,6 @@
   const equals = document.querySelector(".equals-button");
   const clear = document.querySelector(".clear-button");
   const decimal = document.querySelector(".decimal-button");
-  let newNumber = false;
   let decimalState = true;
   let zeroState = false;
   let evaluation = false;
@@ -17,7 +16,6 @@
   function init() {
     display.textContent = "0";
     history.textContent = "0";
-    newNumber = false;
     decimalState = true;
     zeroState = false;
     evaluation = false;
@@ -48,7 +46,7 @@
   for (var i = 0; i < number.length; i++) {
     number[i].addEventListener("click", function () {
       const prevDigit = display.textContent.slice(-1);
-      if (newNumber || evaluation || display.textContent === "0") {
+      if (evaluation || display.textContent === "0") {
         display.textContent = this.value;
         history.textContent = this.value;
       } else if (isNaN(prevDigit) && prevDigit !== ".") {
