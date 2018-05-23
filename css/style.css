@@ -103,11 +103,11 @@ button:active {
 }
 
 .result{
-	font-size: 30px;
+	font-size: 25px;
 	margin: 5px 0 0 0;
 }
 
 .history {
 	font-size: 10px;
-	margin: 5px 0 0 0;
+	margin: 10px 0 0 0;
 }

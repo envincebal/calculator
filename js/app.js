@@ -25,12 +25,12 @@
     // Sets digit limit on display to 10 characters. Function discounts decimal from
     // number limit
     if (display.textContent.includes(".")) {
-      if (display.textContent.length > 11) {
+      if (display.textContent.length > 13) {
         display.textContent = "Digit Limit Met";
         history.textContent = "";
       }
     } else {
-      if (display.textContent.length > 10) {
+      if (display.textContent.length > 12) {
         display.textContent = "Digit Limit Met";
         history.textContent = "";
       }
@@ -131,8 +131,8 @@
       display.textContent = "Bad Syntax!";
     } else {
       // Rounds any decimal total to nearest hundredth
-      display.textContent = parseFloat(eval(history.textContent).toFixed(2));
-      history.textContent = parseFloat(eval(history.textContent).toFixed(2));
+      display.textContent = parseFloat(eval(history.textContent));
+      history.textContent = parseFloat(eval(history.textContent));
 
       decimalState = true;
     }
