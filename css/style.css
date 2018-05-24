@@ -100,6 +100,7 @@ button:active {
 	text-align: right;
 	margin: 0 auto;
 	padding: 0 5px 0 0;
+	font-weight: 700;
 }
 
 .result{
