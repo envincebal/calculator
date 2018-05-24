@@ -129,17 +129,14 @@
     digitLimit();
   })
 
-  // Evaluates history.textContent on display and rounds to the nearest hundredths
-  // if a decimal
+  // Evaluates history.textContent on display
   equals.addEventListener("click", function () {
     const lastIndex = display.textContent.slice(-1);
 
-    // If last digit is not a number then "Bad Syntax!" will display otherwise it
-    // will evaluate history.textContent
+    // If last digit is not a number then "Bad Syntax!" will display otherwise it will evaluate history.textContent
     if (isNaN(lastIndex)) {
       display.textContent = "Bad Syntax!";
     } else {
-      // Rounds any decimal total to nearest hundredth
       display.textContent = parseFloat(eval(history.textContent));
       history.textContent = parseFloat(eval(history.textContent));
 
