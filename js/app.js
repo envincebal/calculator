@@ -91,28 +91,37 @@
   // adds decimal to display
   decimal.addEventListener("click", function () {
     const lastDigit = display.textContent.slice(-1);
-    // if decimal button is pressed, then it is disabled unless decimal in current
-    // integer is deleted
+    // if decimal button is pressed, then it is disabled unless decimal in current integer is deleted
     if (decimalState && isNaN(lastDigit)) {
       display.textContent = "0" + this.value;
       history.textContent += "0" + this.value;
       decimalState = false;
       zeroState = true;
-    } else if (decimalState) {
+    } else if (decimalState && !evaluation) {
       display.textContent += this.value;
       history.textContent += this.value;
       decimalState = false;
       zeroState = true;
+    } else if (evaluation && decimalState) {
+      display.textContent = "0" + this.value;
+      history.textContent = "0" + this.value;
+      decimalState = false;
     } else {
       display.textContent += "";
     }
+    evaluation = false;
     digitLimit();
   });
 
   zero.addEventListener("click", function () {
+    const prevItem = display.textContent.slice(-1);
     // Prevents first number between operators from being zero
-    if (!zeroState) {
+    if (!zeroState && prevItem === "0") {
       display.textContent += "";
+      decimalState = true
+    } else if (evaluation) {
+      display.textContent = this.value;
+      history.textContent = display.textContent;
     } else {
       display.textContent += this.value;
       history.textContent += this.value;
@@ -134,8 +143,9 @@
       display.textContent = parseFloat(eval(history.textContent));
       history.textContent = parseFloat(eval(history.textContent));
 
-      decimalState = true;
     }
+    decimalState = true;
     evaluation = true;
+    digitLimit();
   });
 })()
