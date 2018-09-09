@@ -1,0 +1,28 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "This is a basic calculator app in which the logic is built using Javascript.",
+  "main": "index.html",
+  "scripts": {
+    "dev-server": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envincebal/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/envincebal/calculator/issues"
+  },
+  "homepage": "https://envincebal.github.io/calculator",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
